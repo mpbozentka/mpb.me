@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | PGA Professional & Developer</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            /* Color Palette - A nod to golf greens and modern tech */
+            --primary-color: #2E7D32; /* Forest Green */
+            --secondary-color: #2c3e50; /* Dark Slate Blue for text */
+            --bg-light: #f4f7f6; /* Very light gray background */
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+        }
+
+        /* Main container to center everything nicely */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header/Hero Section */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        /* Adds a small green underline to headings */
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: var(--primary-color);
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+
+        /* About Section Text */
+        .about-text p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        /* Project Grid Layout */
+        .project-grid {
+            display: grid;
+            /* This automatically makes rows and columns based on screen size */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* The Swingstr Project Card */
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        /* Subtle hover effect */
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--bg-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #1b5e20; /* Darker green on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mitchell Bozentka</h1>
+            <p class="subtitle">PGA Professional & Software Developer</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <p>Based in Steiner Ranch, TX. I am a PGA Professional leveraging years of high-level golf instruction experience to build smarter technology solutions.</p>
+                <p>My background in analyzing mechanics at UT Golf Club has provided a unique foundation for systems thinking in software development. I am currently focused on building AI-driven tools that merge physical expertise with digital innovation.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Project</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Swingstr</h3>
+                    <span class="badge">Currently in Development</span>
+                    <p>An AI-powered golf instruction application designed to democratize elite-level swing analysis. Swingstr uses computer vision to provide actionable feedback to players of all levels.</p>
+                    <p><em>Built leveraging modern AI coding assistants and web technologies.</em></p>
+                    <a href="#" class="btn">View Progress</a>
+                </article>
+
+                </div>
+        </section>
+
+        <footer>
+            <p>© 2024. Built with code and coffee in Texas.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
